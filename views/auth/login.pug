@@ -1,0 +1,17 @@
+extends ../layouts/header.pug 
+block title 
+  title Login
+block content
+  form(action='/auth/login' method='post' style='width: 30%; margin: auto; margin-top: 50px;')
+    if(error)
+        .alert.alert-danger(role='alert')=error
+    .input-group.mb-3
+      span#basic-addon1.input-group-text Email
+      input.form-control(type='text' placeholder='email' aria-label='email' aria-describedby='basic-addon1' name='email' value=values ? values.email : '')
+    .input-group.mb-3
+      span#basic-addon1.input-group-text Password
+      input.form-control(type='password' placeholder='password' aria-label='password' aria-describedby='basic-addon1' name='password' value=values ? values.password : '')
+      
+    button.btn(type='button' class='btn-outline-primary;' style="float: left; margin-top: 10px;").btn.btn-primary
+      a(href='/users' style='text-decoration: none;color: white;') Back
+    button.btn.btn-primary(type='submit' style='float: right; margin-top: 10px;') Login

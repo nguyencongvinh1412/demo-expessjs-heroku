@@ -1,0 +1,23 @@
+extends ../layouts/header.pug 
+block title 
+  title Create New User 
+block content
+  form(action='/users/create' method='post' style='width: 30%; margin: auto; margin-top: 50px;')
+    if(error)
+        .alert.alert-danger(role='alert')=error
+    .input-group.mb-3
+      span#basic-addon1.input-group-text Name
+      input.form-control(type='text' placeholder='Username' aria-label='Username' aria-describedby='basic-addon1' name='name' value=values ? values.name : '')
+    .input-group.mb-3
+      span#basic-addon1.input-group-text Age
+      input.form-control(type='text' placeholder='Age' aria-label='Age' aria-describedby='basic-addon1' name='age' value=values ? values.age : '')
+    .form-group
+      input#1.form-check-input(type='radio' name='sex' value='1' checked)
+      label.form-check-label(for='1')
+        | &nbsp&nbspNam&nbsp&nbsp
+      input#0.form-check-input(type='radio' name='sex' value='0')
+      label.form-check-label(for='0')
+        | &nbsp&nbspNữ&nbsp&nbsp;
+    button.btn(type='button' class='btn-outline-primary;' style="float: left; margin-top: 10px;").btn.btn-primary
+      a(href='/users' style='text-decoration: none;color: white;') Back
+    button.btn.btn-primary(type='submit' style='float: right; margin-top: 10px;') Register

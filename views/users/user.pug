@@ -1,0 +1,30 @@
+extends ../layouts/header.pug 
+block title
+    title User List
+block content
+    div(style="margin-top: 50px;")
+        div(style="width: 80%; margin: auto")
+            form(action="/users/search", method="get" style="margin-top: 10px; width: 100%;")
+                input(type="text", name="q" style="width: 75%;float: left;").form-control
+                button(style="float: right; width: 20%;").btn.btn-primary Search 
+            table.table.table-hover
+                thead
+                    tr
+                        th Name
+                        th Age
+                        th Sex
+                        th Action
+                tbody
+                    each user in users 
+                        tr
+                            td= user.name 
+                            td= user.age
+                            td= user.sex
+                            td 
+                                a(href='/users/' + user.id) Delete 
+                        
+            div(style="margin-top: 10px; width: 100%;")
+                button(style="float: left;").btn.btn-primary
+                    a(href="/" style="text-decoration: none; color: white") Back
+                button(style="float: right;").btn.btn-primary
+                    a(href="/users/create" style="text-decoration: none; color: white") Create New User

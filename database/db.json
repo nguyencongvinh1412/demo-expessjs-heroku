@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "công vinh",
+      "age": "22",
+      "sex": "nam"
+    },
+    {
+      "id": 2,
+      "name": "văn lành",
+      "age": "22",
+      "sex": "nam"
+    },
+    {
+      "id": 3,
+      "name": "hải triều",
+      "age": "21",
+      "sex": "nam"
+    },
+    {
+      "id": 4,
+      "name": "hồng hạnh",
+      "age": "22",
+      "sex": "nữ"
+    },
+    {
+      "id": 5,
+      "name": "minh nhật",
+      "age": "21",
+      "sex": "nam"
+    },
+    {
+      "id": 6,
+      "name": "hồng an",
+      "age": "21",
+      "sex": "nam"
+    },
+    {
+      "id": 7,
+      "name": "Edogawa Conan",
+      "age": "6",
+      "sex": "nam"
+    },
+    {
+      "id": 8,
+      "name": "Kudo Shinichi",
+      "age": "18",
+      "sex": "name"
+    },
+    {
+      "id": 9,
+      "name": "Kaito Kid",
+      "age": "18",
+      "sex": "name"
+    },
+    {
+      "id": 10,
+      "name": "Ran Mori",
+      "age": "18",
+      "sex": "nữ"
+    },
+    {
+      "id": 11,
+      "name": "admin",
+      "age": "22",
+      "sex": "nam",
+      "email": "admin@gmail.com",
+      "password": "21232f297a57a5a743894a0e4a801fc3"
+    },
+    {
+      "id": 12,
+      "name": "Hattori Heji",
+      "age": "18",
+      "sex": "name"
+    },
+    {
+      "id": 13,
+      "name": "Mori Kogoro",
+      "age": "35",
+      "sex": "name"
+    },
+    {
+      "id": 14,
+      "name": "Agasa",
+      "age": "70",
+      "sex": "name"
+    }
+  ]
+}
